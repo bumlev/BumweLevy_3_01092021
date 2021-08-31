@@ -1,0 +1,34 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Shrikhand&display=swap');
+
+// Variables 
+@import "./utils/variables";
+
+// Mixin
+@import "./utils/mixins";
+
+//body: Corps de la page
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    width: 100%;
+    counter-reset: compteListe;
+   
+    @include mobile{
+        margin: 0;
+        height: auto;
+    }
+}
+// Header:Entete de la page
+@import "./layouts/headers";
+
+@import "./layouts/container";
+// Div:une element_1 de la page
+@import "./layouts/divs";
+
+// section de la page
+@import "./layouts/sections";
+
+// pied  de la page
+@import "./layouts/footers";
