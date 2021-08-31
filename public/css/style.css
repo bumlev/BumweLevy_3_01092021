@@ -2,11 +2,12 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
-  width: 100%;
+  width: 1349px;
   counter-reset: compteListe;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   body {
+    width: 100%;
     margin: 0;
     height: auto;
   }
@@ -114,6 +115,7 @@ body {
 .info__steps > .info_step {
   display: flex;
   flex: 1;
+  align-items: center;
   padding: 1.5rem;
   margin: 0 3rem 0 3rem;
   border-radius: 1.25rem;
@@ -187,6 +189,7 @@ body {
   height: auto;
   border-radius: 1rem;
   background-color: white;
+  position: relative;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .restaurant__new .order {
@@ -251,14 +254,17 @@ body {
 .restaurant__new .order__menu .nouveau {
   background-color: #99e2d0;
   color: #1b6150;
-  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem;
   border-radius: 0.125rem;
-  position: relative;
-  top: -10rem;
-  left: 85%;
+  position: absolute;
+  top: 12px;
+  right: 15px;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .restaurant__new .order__menu .nouveau {
+    padding: 0.5rem 2.3rem;
     left: 72%;
   }
 }
