@@ -12,10 +12,21 @@
 body{
     font-family: 'Roboto', sans-serif;
     margin: auto;
-    width: 1349px;
+    max-width: 1350px;
     counter-reset: compteListe;
    
     @include mobile{
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+
+    @include tablette{
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+    @include mobile_android{
         width: 100%;
         margin: 0;
         height: auto;
