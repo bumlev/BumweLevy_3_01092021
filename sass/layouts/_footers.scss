@@ -5,8 +5,7 @@
     color:#fff;
     margin: 0;
     .contenu{
-        @include column;
-        width: $auto;
+        @include auto_column;
         margin-left: 6%;
         padding: 1rem;
         @include mobile{

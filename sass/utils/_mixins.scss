@@ -1,3 +1,6 @@
+/* ------------------     Mixins of home page ---------------------------------------------*/
+
+
 @mixin before {
     counter-increment: compteListe 1;
     content: counter(compteListe) " ";
@@ -64,4 +67,88 @@
         padding-left: 0;
         margin-left:0;
     }
+}
+
+@mixin on_active{
+    .icon{
+        transition: transform 1s linear;
+        i.far.fa-heart {
+            display: block;
+        }
+        .icon_1{
+            visibility: visible;
+            opacity: 1;
+            transition: transform 1s linear;
+        }
+
+        .icon_2{
+            position: relative;
+            visibility: hidden;
+            opacity: 0;
+            transform: scale(1);
+            transition: transform 1s linear;
+        }
+        &:active .icon_1 {
+            visibility: hidden;
+            opacity: 0;
+          }
+        
+        &:active .icon_2 {
+            visibility: visible;
+            opacity: 1;
+            background: -webkit-gradient(linear, left top, left bottom, from($color-secondary ), to($color-primary));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: scale(1.5);
+        }
+    }    
+}
+
+@mixin on_active_button {
+    transform: scale(1);
+    transition: transform 1s;
+    &:active{
+        transform: scale(1.2);
+        transition-duration: .5s;
+        box-shadow: .55rem .55rem 10px rgba(0,0,0,.25);
+    }
+}
+
+@mixin on_hover{
+    .icon{
+        display: block;
+        margin-left: auto;
+        cursor: pointer;
+        transition: transform 1s linear;
+        i.far.fa-heart {
+            display: block;
+        }
+        .icon_1{
+            visibility: visible;
+            opacity: 1;
+            transition: transform 1s linear;
+        }
+
+        .icon_2{
+            position: $relative;
+            top: -30px;
+            visibility: hidden;
+            opacity: 0;
+            transform: scale(1);
+            transition: transform 1s linear;
+        }
+        &:hover .icon_1 {
+            visibility: hidden;
+            opacity: 0;
+          }
+        
+        &:hover .icon_2 {
+            visibility: visible;
+            opacity: 1;
+            background: -webkit-gradient(linear, left top, left bottom, from($color-secondary ), to($color-primary));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: scale(1.5);
+        }
+    } 
 }

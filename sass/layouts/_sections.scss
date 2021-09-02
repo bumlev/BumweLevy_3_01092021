@@ -1,4 +1,8 @@
 
+
+/* ------------------------  Section de la page d'accueil  ------------------------------------*/
+
+
 .restaurant{
     @include auto_column;
     justify-content: space-around;
@@ -27,18 +31,18 @@
         }
         @include mobile{
             @include column;
-            height: auto;
+            height: $auto;
             margin: 1% 4.3% 0 4.3%;
         }
 
         @include mobile_android{
             @include column;
-            height: auto;
+            height: $auto;
         }
 
         @include tablette{
             @include column;
-            height: auto;
+            height: $auto;
         }
         .order{
             @include column;
@@ -46,7 +50,7 @@
             height: $auto;
             border-radius:1rem;
             background-color: white;
-            position:relative;
+            position: $relative;
             @include mobile{
                 @include auto_column;
                 margin: 4% 0.1% 4% 0.1%;
@@ -73,17 +77,15 @@
                     object-fit: cover;
                 }
                 .footer{
-                    display: flex;
-                    width: auto;
+                    display: $flex;
+                    width: $auto;
                     &__menu{
-                        display: flex;
-                        flex-direction: row;
+                        @include row;
                         width: 100%;
                         padding: 0.5rem;
                         .description{
-                            display: flex;
+                            @include column;
                             flex:1;
-                            flex-direction: column;
                             @include mobile{
                                 flex:2; 
                             }
@@ -95,55 +97,30 @@
                             } 
                         }
                         .like{
-                            display: flex;
+                            display: $flex;
                             flex:1;
-                            .icon{
-                                display: block;
-                                margin-left: auto;
-                                cursor: pointer;
-                                transition: transform 1s linear;
-                                i.far.fa-heart {
-                                    display: block;
-                                }
-                                .icon_1{
-                                    visibility: visible;
-                                    opacity: 1;
-                                    transition: transform 1s linear;
-                                }
+                            @include on_hover;
+                            @include mobile{
+                                @include on_active;
+                            }
 
-                                .icon_2{
-                                    position: relative;
-                                    top: -30px;
-                                    visibility: hidden;
-                                    opacity: 0;
-                                    transform: scale(1);
-                                    transition: transform 1s linear;
-                                }
-                                &:hover .icon_1 {
-                                    visibility: hidden;
-                                    opacity: 0;
-                                  }
-                                
-                                &:hover .icon_2 {
-                                    visibility: visible;
-                                    opacity: 1;
-                                    background: -webkit-gradient(linear, left top, left bottom, from($color-secondary ), to($color-primary));
-                                    background-clip: text;
-                                    -webkit-text-fill-color: transparent;
-                                    transform: scale(1.5);
-                                }
-                            }    
+                            @include tablette{
+                                @include on_active;
+                            }
+                            @include tablette_pro{
+                                @include on_active;
+                            }
                         }
                     }
                 }
                 .nouveau{
                     background-color: #99e2d0;
                     color: #1b6150;
-                    display: flex;
-                    justify-content: center;
+                    display: $flex;
+                    justify-content: $center;
                     padding: 0.5rem 1rem;
                     border-radius: .125rem;
-                    position: absolute;
+                    position: $absolute;
                     top: 12px;
                     right:15px;
                     @include mobile{  
