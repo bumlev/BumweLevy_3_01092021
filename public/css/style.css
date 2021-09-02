@@ -338,15 +338,39 @@ body {
   display: flex;
   flex: 1;
 }
-.restaurant__new .order__menu .footer__menu .like i {
+.restaurant__new .order__menu .footer__menu .like .icon {
+  display: block;
   margin-left: auto;
-  transform: scale(1);
-  transition: background-image 1500ms;
+  cursor: pointer;
+  transition: transform 1s linear;
 }
-.restaurant__new .order__menu .footer__menu .like i:hover {
+.restaurant__new .order__menu .footer__menu .like .icon i.far.fa-heart {
+  display: block;
+}
+.restaurant__new .order__menu .footer__menu .like .icon .icon_1 {
+  visibility: visible;
+  opacity: 1;
+  transition: transform 1s linear;
+}
+.restaurant__new .order__menu .footer__menu .like .icon .icon_2 {
+  position: relative;
+  top: -30px;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(1);
+  transition: transform 1s linear;
+}
+.restaurant__new .order__menu .footer__menu .like .icon:hover .icon_1 {
+  visibility: hidden;
+  opacity: 0;
+}
+.restaurant__new .order__menu .footer__menu .like .icon:hover .icon_2 {
+  visibility: visible;
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   transform: scale(1.5);
-  border-color: transparent;
-  background-image: linear-gradient(0, #9356DC, #FF79DA);
 }
 .restaurant__new .order__menu .nouveau {
   background-color: #99e2d0;
