@@ -71,6 +71,7 @@
 
 @mixin on_active{
     .icon{
+        overflow: hidden;
         transition: transform 1s linear;
         i.far.fa-heart {
             display: block;
