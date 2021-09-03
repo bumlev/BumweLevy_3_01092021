@@ -35,10 +35,32 @@ body {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   position: relative;
 }
+.header--pagex {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+}
 .header__logo {
   font-family: "Shrikhand", "cursive";
   text-align: center;
   margin: 0;
+}
+.header__logo--pagex {
+  margin: 0 auto 0 auto;
+}
+.header__back_logo {
+  position: absolute;
+  margin-left: 2%;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 32rem;
+  width: 100%;
+  object-fit: cover;
 }
 
 .container {
@@ -46,6 +68,15 @@ body {
   flex-direction: column;
   width: 100%;
   margin: 0 0 0 0;
+}
+.container--pagex {
+  width: 80%;
+  background-color: #f3f3f3;
+  height: 500px;
+  margin: -4% auto 0 auto;
+  border: 1px solid transparent;
+  position: relative;
+  border-radius: 2rem 2rem 0 0;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .container {

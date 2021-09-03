@@ -3,6 +3,15 @@
     flex-direction: column;
     width: 100%;
     margin: 0 0 0 0;
+    &--pagex{
+        width: 80%;
+        background-color: #f3f3f3;
+        height: 500px;
+        margin:-4% auto 0 auto ;
+        border: 1px solid transparent;
+        position: relative;
+        border-radius: 2rem 2rem 0 0;
+    }
     @include mobile{
         width: 100%;
     }
