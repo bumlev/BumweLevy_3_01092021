@@ -26,3 +26,14 @@
         font-size: 1.2rem;
     }
 }
+
+
+/// Pour d'autres pages
+
+.tete{
+    @include row;
+    width: $auto;
+    height: 40px;
+    border: 1px solid;
+    margin:4% 1.5%;
+}
