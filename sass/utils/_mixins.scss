@@ -83,7 +83,6 @@
             opacity: 1;
             transition: transform 1s linear;
         }
-
         .icon_2{
             position: $relative;
             top: -30px;
@@ -92,16 +91,16 @@
             transform: scale(1);
             transition: transform 1s linear;
         }
-        &:hover .icon_1 {
+        &:active .icon_1 {
             visibility: hidden;
             opacity: 0;
           }
         
-        &:hover .icon_2 {
+        &:active .icon_2 {
             visibility: visible;
             opacity: 1;
             background: -webkit-gradient(linear, left top, left bottom, from($color-secondary ), to($color-primary));
-            background-clip: text;
+            background-clip: border-box;
             -webkit-text-fill-color: transparent;
             transform: scale(1.5);
         }
@@ -132,7 +131,6 @@
             opacity: 1;
             transition: transform 1s linear;
         }
-
         .icon_2{
             position: $relative;
             top: -30px;
@@ -150,7 +148,7 @@
             visibility: visible;
             opacity: 1;
             background: -webkit-gradient(linear, left top, left bottom, from($color-secondary ), to($color-primary));
-            background-clip: text;
+            background-clip:border-box;
             -webkit-text-fill-color: transparent;
             transform: scale(1.5);
         }

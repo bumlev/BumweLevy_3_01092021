@@ -429,7 +429,7 @@ body {
   visibility: visible;
   opacity: 1;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background-clip: text;
+  background-clip: border-box;
   -webkit-text-fill-color: transparent;
   transform: scale(1.5);
 }
@@ -456,15 +456,15 @@ body {
     transform: scale(1);
     transition: transform 1s linear;
   }
-  .restaurant__new .order__menu .footer__menu .like .icon:hover .icon_1 {
+  .restaurant__new .order__menu .footer__menu .like .icon:active .icon_1 {
     visibility: hidden;
     opacity: 0;
   }
-  .restaurant__new .order__menu .footer__menu .like .icon:hover .icon_2 {
+  .restaurant__new .order__menu .footer__menu .like .icon:active .icon_2 {
     visibility: visible;
     opacity: 1;
     background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background-clip: text;
+    background-clip: border-box;
     -webkit-text-fill-color: transparent;
     transform: scale(1.5);
   }
@@ -492,15 +492,15 @@ body {
     transform: scale(1);
     transition: transform 1s linear;
   }
-  .restaurant__new .order__menu .footer__menu .like .icon:hover .icon_1 {
+  .restaurant__new .order__menu .footer__menu .like .icon:active .icon_1 {
     visibility: hidden;
     opacity: 0;
   }
-  .restaurant__new .order__menu .footer__menu .like .icon:hover .icon_2 {
+  .restaurant__new .order__menu .footer__menu .like .icon:active .icon_2 {
     visibility: visible;
     opacity: 1;
     background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background-clip: text;
+    background-clip: border-box;
     -webkit-text-fill-color: transparent;
     transform: scale(1.5);
   }
@@ -528,15 +528,15 @@ body {
     transform: scale(1);
     transition: transform 1s linear;
   }
-  .restaurant__new .order__menu .footer__menu .like .icon:hover .icon_1 {
+  .restaurant__new .order__menu .footer__menu .like .icon:active .icon_1 {
     visibility: hidden;
     opacity: 0;
   }
-  .restaurant__new .order__menu .footer__menu .like .icon:hover .icon_2 {
+  .restaurant__new .order__menu .footer__menu .like .icon:active .icon_2 {
     visibility: visible;
     opacity: 1;
     background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background-clip: text;
+    background-clip: border-box;
     -webkit-text-fill-color: transparent;
     transform: scale(1.5);
   }
