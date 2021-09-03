@@ -3,7 +3,7 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
-  max-width: 1350px;
+  max-width: 1400px;
   counter-reset: compteListe;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -388,13 +388,16 @@ body {
 .restaurant__new .order__menu .footer__menu .like .icon:hover .icon_2 {
   visibility: visible;
   opacity: 1;
+  background: -moz-linear-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(1.5);
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .restaurant__new .order__menu .footer__menu .like .icon {
+    overflow: hidden;
     transition: transform 1s linear;
   }
   .restaurant__new .order__menu .footer__menu .like .icon i.far.fa-heart {
@@ -419,14 +422,17 @@ body {
   .restaurant__new .order__menu .footer__menu .like .icon:active .icon_2 {
     visibility: visible;
     opacity: 1;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: -moz-linear-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: -webkit-linear-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transform: scale(1.5);
+    transform: scale(1);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurant__new .order__menu .footer__menu .like .icon {
+    overflow: hidden;
     transition: transform 1s linear;
   }
   .restaurant__new .order__menu .footer__menu .like .icon i.far.fa-heart {
@@ -451,14 +457,17 @@ body {
   .restaurant__new .order__menu .footer__menu .like .icon:active .icon_2 {
     visibility: visible;
     opacity: 1;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: -moz-linear-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: -webkit-linear-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transform: scale(1.5);
+    transform: scale(1);
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .restaurant__new .order__menu .footer__menu .like .icon {
+    overflow: hidden;
     transition: transform 1s linear;
   }
   .restaurant__new .order__menu .footer__menu .like .icon i.far.fa-heart {
@@ -483,10 +492,12 @@ body {
   .restaurant__new .order__menu .footer__menu .like .icon:active .icon_2 {
     visibility: visible;
     opacity: 1;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: -moz-linear-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: -webkit-linear-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transform: scale(1.5);
+    transform: scale(1);
   }
 }
 .restaurant__new .order__menu .nouveau {
