@@ -1,3 +1,5 @@
+// Les entetes de la page
+
 .header{
     width: $auto;
     background-color: transparent;
@@ -28,12 +30,18 @@
 }
 
 
-/// Pour d'autres pages
+// Pour d'autres pages
 
 .tete{
     @include row;
     width: $auto;
-    height: 40px;
-    border: 1px solid;
-    margin:4% 1.5%;
+    margin:0.3% 1.5%;
+    align-items: $center;
+    &__title{
+        display: $flex;
+        padding-left:2%;
+        font-family: "Shrikhand","cursive";
+    }
+    @include on_hover;
+
 }

@@ -1,3 +1,5 @@
+/// Pour la page principale
+
 .local{
     @include flex_center;
     padding: 1.25rem 1rem;
@@ -126,4 +128,61 @@
     }
 }
 
+/// Pour d'autres pages
 
+.menu{
+    @include row;
+    width: $auto;
+    justify-content: space-between;
+    height: 350px;
+    margin: 1%;
+    &__activities{
+        @include column;
+        width: 32%;
+        height: $auto;
+        justify-content: space-between;
+        .title{
+            text-transform: uppercase;
+            font-weight: 400;
+            position: relative;
+            &::after{
+                width: 3rem;
+                border:1px solid;
+            }
+        }
+        .food{
+            @include row;
+            width: $auto;
+            height: 4.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
+            background-color: #fff;
+            &__header{
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                padding-left: 4%;
+                font-size: 1.2em;
+                h4{
+                    width: auto;
+                    margin: 3.5% 0 0 0;
+                }
+                p{
+                    width: auto;
+                    font-weight:300;
+                    margin:0;
+                }
+
+            }
+            &__price{
+                display: flex;
+                padding-top:8.8%;
+                padding-right: 4%;
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+        }
+    }
+
+}

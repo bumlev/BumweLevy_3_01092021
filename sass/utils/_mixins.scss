@@ -69,7 +69,7 @@
     }
 }
 
-@mixin on_active{
+/*@mixin on_active{
     .icon{
         display: block;
         margin-left: auto;
@@ -105,7 +105,7 @@
             transform: scale(1.5);
         }
     }    
-}
+}*/
 
 @mixin on_active_button {
     transform: scale(1);
@@ -125,11 +125,21 @@
         transition: transform 1s linear;
         i.far.fa-heart {
             display: block;
+            &--pagex{
+                display: flex;
+            }
         }
         .icon_1{
             visibility: visible;
             opacity: 1;
             transition: transform 1s linear;
+            &--pagex{
+                position: $relative;
+                top:0;
+                text-align: center;
+                right:-12.5px;
+                font-size: 1.5em;
+            }
         }
         .icon_2{
             position: $relative;
@@ -138,6 +148,12 @@
             opacity: 0;
             transform: scale(1);
             transition: transform 1s linear;
+            &--pagex{
+                top:0;
+                text-align: center;
+                right: 12px;
+                font-size: 1.5em;
+            }
         }
         &:hover .icon_1 {
             visibility: hidden;
@@ -151,6 +167,10 @@
             -webkit-background-clip:text;
             -webkit-text-fill-color: transparent;
             transform: scale(1.5);
+        }
+        &--pagex{
+            display: $flex;
+            padding: 0 0.5% 0 0.5%;
         }
     } 
 }

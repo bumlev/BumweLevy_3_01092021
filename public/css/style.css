@@ -1,5 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Shrikhand&display=swap");
 /* ------------------     Mixins of home page ---------------------------------------------*/
+/*@mixin on_active{
+    .icon{
+        display: block;
+        margin-left: auto;
+        cursor: pointer;
+        transition: transform 1s linear;
+        i.far.fa-heart {
+            display: block;
+        }
+        .icon_1{
+            visibility: visible;
+            opacity: 1;
+            transition: transform 1s linear;
+        }
+        .icon_2{
+            position: $relative;
+            top: -30px;
+            visibility: hidden;
+            opacity: 0;
+            transform: scale(1);
+            transition: transform 1s linear;
+        }
+        &:active .icon_1 {
+            visibility: hidden;
+            opacity: 0;
+          }
+
+        &:active .icon_2 {
+            visibility: visible;
+            opacity: 1;
+            background: linear-gradient(linear, left top, left bottom, from($color-secondary ), to($color-primary));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: scale(1.5);
+        }
+    }    
+}*/
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
@@ -60,9 +97,67 @@ body {
   display: flex;
   flex-direction: row;
   width: auto;
-  height: 40px;
-  border: 1px solid;
-  margin: 4% 1.5%;
+  margin: 0.3% 1.5%;
+  align-items: center;
+}
+.tete__title {
+  display: flex;
+  padding-left: 2%;
+  font-family: "Shrikhand", "cursive";
+}
+.tete .icon {
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+  transition: transform 1s linear;
+}
+.tete .icon i.far.fa-heart {
+  display: block;
+}
+.tete .icon i.far.fa-heart--pagex {
+  display: flex;
+}
+.tete .icon .icon_1 {
+  visibility: visible;
+  opacity: 1;
+  transition: transform 1s linear;
+}
+.tete .icon .icon_1--pagex {
+  position: relative;
+  top: 0;
+  text-align: center;
+  right: -12.5px;
+  font-size: 1.5em;
+}
+.tete .icon .icon_2 {
+  position: relative;
+  top: -30px;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(1);
+  transition: transform 1s linear;
+}
+.tete .icon .icon_2--pagex {
+  top: 0;
+  text-align: center;
+  right: 12px;
+  font-size: 1.5em;
+}
+.tete .icon:hover .icon_1 {
+  visibility: hidden;
+  opacity: 0;
+}
+.tete .icon:hover .icon_2 {
+  visibility: visible;
+  opacity: 1;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.5);
+}
+.tete .icon--pagex {
+  display: flex;
+  padding: 0 0.5% 0 0.5%;
 }
 
 .image {
@@ -79,9 +174,9 @@ body {
   margin: 0 0 0 0;
 }
 .container--pagex {
-  width: 80%;
+  width: 90%;
   background-color: #f3f3f3;
-  height: 500px;
+  height: 550px;
   margin: -4% auto 0 auto;
   border: 1px solid transparent;
   position: relative;
@@ -264,6 +359,64 @@ body {
   color: #7e7e7e;
 }
 
+.menu {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  justify-content: space-between;
+  height: 350px;
+  margin: 1%;
+}
+.menu__activities {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  height: auto;
+  justify-content: space-between;
+}
+.menu__activities .title {
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+}
+.menu__activities .title::after {
+  width: 3rem;
+  border: 1px solid;
+}
+.menu__activities .food {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 4.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.menu__activities .food__header {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 4%;
+  font-size: 1.2em;
+}
+.menu__activities .food__header h4 {
+  width: auto;
+  margin: 3.5% 0 0 0;
+}
+.menu__activities .food__header p {
+  width: auto;
+  font-weight: 300;
+  margin: 0;
+}
+.menu__activities .food__price {
+  display: flex;
+  padding-top: 8.8%;
+  padding-right: 4%;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
 /* ------------------------  Section de la page d'accueil  ------------------------------------*/
 .restaurant {
   display: flex;
@@ -408,10 +561,20 @@ body {
 .restaurant__new .order__menu .footer__menu .like .icon i.far.fa-heart {
   display: block;
 }
+.restaurant__new .order__menu .footer__menu .like .icon i.far.fa-heart--pagex {
+  display: flex;
+}
 .restaurant__new .order__menu .footer__menu .like .icon .icon_1 {
   visibility: visible;
   opacity: 1;
   transition: transform 1s linear;
+}
+.restaurant__new .order__menu .footer__menu .like .icon .icon_1--pagex {
+  position: relative;
+  top: 0;
+  text-align: center;
+  right: -12.5px;
+  font-size: 1.5em;
 }
 .restaurant__new .order__menu .footer__menu .like .icon .icon_2 {
   position: relative;
@@ -420,6 +583,12 @@ body {
   opacity: 0;
   transform: scale(1);
   transition: transform 1s linear;
+}
+.restaurant__new .order__menu .footer__menu .like .icon .icon_2--pagex {
+  top: 0;
+  text-align: center;
+  right: 12px;
+  font-size: 1.5em;
 }
 .restaurant__new .order__menu .footer__menu .like .icon:hover .icon_1 {
   visibility: hidden;
@@ -432,6 +601,10 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(1.5);
+}
+.restaurant__new .order__menu .footer__menu .like .icon--pagex {
+  display: flex;
+  padding: 0 0.5% 0 0.5%;
 }
 .restaurant__new .order__menu .nouveau {
   background-color: #99e2d0;
