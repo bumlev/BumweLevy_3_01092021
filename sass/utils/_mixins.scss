@@ -99,8 +99,8 @@
         &:active .icon_2 {
             visibility: visible;
             opacity: 1;
-            background: -webkit-gradient(linear, left top, left bottom, from($color-secondary ), to($color-primary));
-            background-clip: border-box;
+            background: linear-gradient(linear, left top, left bottom, from($color-secondary ), to($color-primary));
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             transform: scale(1.5);
         }
@@ -147,8 +147,8 @@
         &:hover .icon_2 {
             visibility: visible;
             opacity: 1;
-            background: -webkit-gradient(linear, left top, left bottom, from($color-secondary ), to($color-primary));
-            background-clip:border-box;
+            background: linear-gradient(to top , $color-primary , $color-secondary);
+            -webkit-background-clip:text;
             -webkit-text-fill-color: transparent;
             transform: scale(1.5);
         }
