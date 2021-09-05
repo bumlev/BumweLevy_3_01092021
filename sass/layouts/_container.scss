@@ -1,15 +1,14 @@
 .container{
-    display: flex;
-    flex-direction: column;
+    @include column;
     width: 100%;
     margin: 0 0 0 0;
     &--pagex{
         width: 90%;
         background-color: #f3f3f3;
-        height: 550px;
-        margin:-4% auto 0 auto ;
+        height: $auto;
+        margin:-4% $auto 0 $auto ;
         border: 1px solid transparent;
-        position: relative;
+        position: $relative;
         border-radius: 2rem 2rem 0 0;
     }
     @include mobile{

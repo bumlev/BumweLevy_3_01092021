@@ -28,25 +28,7 @@
     }
 
     &__explo{
-        text-align: $center;
-        color: #fff;
-        background-color: #FF79DA  ;
-        border: 0;
-        margin: 0 $auto;
-        padding: .75rem 1.5rem;
-        border-radius: 100px;
-        font-weight: 500;
-        font-size: 1.1rem;
-        background-image: linear-gradient(0,#9356DC  ,#FF79DA);
-        cursor: pointer;
-        box-shadow: .25rem .25rem 10px rgba(0,0,0,.25);
-        transform: scale(1);
-        transition: transform 1s;
-        &:hover{
-            transform: scale(1.2);
-            transition-duration: .5s;
-            box-shadow: .55rem .55rem 10px rgba(0,0,0,.25);
-        }
+        @include button;
         @include mobile{
             @include on_active_button;
         }
@@ -134,28 +116,29 @@
     @include row;
     width: $auto;
     justify-content: space-between;
-    height: 350px;
     margin: 1%;
     &__activities{
         @include column;
         width: 32%;
-        height: $auto;
-        justify-content: space-between;
         .title{
             text-transform: uppercase;
-            font-weight: 400;
-            position: relative;
+            font-weight:400;
+            position: $relative;
             &::after{
+                content: "";
                 width: 3rem;
-                border:1px solid;
+                height: .25rem;
+                background-color: #99e2d0;
+                display: flex;
             }
         }
         .food{
             @include row;
             width: $auto;
-            height: 4.5rem;
             border-radius: 10px;
             cursor: pointer;
+            margin:.3rem;
+            padding: .3rem 0;
             box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
             background-color: #fff;
             &__header{
@@ -163,26 +146,32 @@
                 flex-direction: column;
                 flex: 1;
                 padding-left: 4%;
-                font-size: 1.2em;
+                font-size: 1em;
                 h4{
-                    width: auto;
-                    margin: 3.5% 0 0 0;
+                    margin: 2.5% 0 0 0;
                 }
-                p{
-                    width: auto;
+                p{ 
                     font-weight:300;
-                    margin:0;
+                    margin:0; 
                 }
-
             }
             &__price{
                 display: flex;
-                padding-top:8.8%;
+                padding-top:7.5%;
                 padding-right: 4%;
                 font-weight: bold;
-                font-size: 1.2em;
+                font-size: 1em;
             }
         }
     }
 
+}
+
+.submit{
+    display: flex;
+    width: auto;
+    margin:3% 0 3% 0;
+    &__commande{
+        @include button;
+    }
 }

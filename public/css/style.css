@@ -176,7 +176,7 @@ body {
 .container--pagex {
   width: 90%;
   background-color: #f3f3f3;
-  height: 550px;
+  height: auto;
   margin: -4% auto 0 auto;
   border: 1px solid transparent;
   position: relative;
@@ -364,15 +364,12 @@ body {
   flex-direction: row;
   width: auto;
   justify-content: space-between;
-  height: 350px;
   margin: 1%;
 }
 .menu__activities {
   display: flex;
   flex-direction: column;
   width: 32%;
-  height: auto;
-  justify-content: space-between;
 }
 .menu__activities .title {
   text-transform: uppercase;
@@ -380,16 +377,20 @@ body {
   position: relative;
 }
 .menu__activities .title::after {
+  content: "";
   width: 3rem;
-  border: 1px solid;
+  height: 0.25rem;
+  background-color: #99e2d0;
+  display: flex;
 }
 .menu__activities .food {
   display: flex;
   flex-direction: row;
   width: auto;
-  height: 4.5rem;
   border-radius: 10px;
   cursor: pointer;
+  margin: 0.3rem;
+  padding: 0.3rem 0;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }
@@ -398,23 +399,48 @@ body {
   flex-direction: column;
   flex: 1;
   padding-left: 4%;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .menu__activities .food__header h4 {
-  width: auto;
-  margin: 3.5% 0 0 0;
+  margin: 2.5% 0 0 0;
 }
 .menu__activities .food__header p {
-  width: auto;
   font-weight: 300;
   margin: 0;
 }
 .menu__activities .food__price {
   display: flex;
-  padding-top: 8.8%;
+  padding-top: 7.5%;
   padding-right: 4%;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
+}
+
+.submit {
+  display: flex;
+  width: auto;
+  margin: 3% 0 3% 0;
+}
+.submit__commande {
+  text-align: center;
+  color: #fff;
+  background-color: #FF79DA;
+  border: 0;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  background-image: linear-gradient(0, #9356DC, #FF79DA);
+  cursor: pointer;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  transform: scale(1);
+  transition: transform 1s;
+}
+.submit__commande:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+  box-shadow: 0.55rem 0.55rem 10px rgba(0, 0, 0, 0.25);
 }
 
 /* ------------------------  Section de la page d'accueil  ------------------------------------*/
@@ -657,6 +683,9 @@ body {
   .pied .contenu {
     margin-left: 5.5%;
   }
+}
+.pied .contenu--pagex {
+  margin-left: 3.6%;
 }
 .pied__logo {
   font-family: "Shrikhand", "cursive";
