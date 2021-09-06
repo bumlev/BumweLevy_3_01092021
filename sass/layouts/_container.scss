@@ -10,6 +10,9 @@
         border: 1px solid transparent;
         position: $relative;
         border-radius: 2rem 2rem 0 0;
+        @include mobile{
+            margin:-10% $auto 0 $auto ;
+        }
     }
     @include mobile{
         width: 100%;

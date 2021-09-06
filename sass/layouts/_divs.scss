@@ -117,9 +117,19 @@
     width: $auto;
     justify-content: space-between;
     margin: 1%;
+    @include mobile{
+        @include column;
+        width: 95%;
+        margin: 0 auto;
+        
+    }
     &__activities{
         @include column;
         width: 32%;
+        @include mobile{
+            width: 100%;
+            margin: 0 0;
+        }
         .title{
             text-transform: uppercase;
             font-weight:400;
