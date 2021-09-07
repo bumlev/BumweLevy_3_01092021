@@ -119,7 +119,6 @@ body {
 .tete .icon .icon_1 {
   visibility: visible;
   opacity: 1;
-  transition: transform 1s linear;
 }
 .tete .icon .icon_1--pagex {
   position: relative;
@@ -553,16 +552,6 @@ body {
     visibility: visible;
     width: 4rem;
   }
-  .menu__activities .food__check:hover h4 {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .menu__activities .food__check:hover p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
   .menu__activities .food__check:hover .food__header {
     width: 60%;
   }
@@ -768,7 +757,6 @@ body {
 .restaurant__new .order__menu .footer__menu .like .icon .icon_1 {
   visibility: visible;
   opacity: 1;
-  transition: transform 1s linear;
 }
 .restaurant__new .order__menu .footer__menu .like .icon .icon_1--pagex {
   position: relative;

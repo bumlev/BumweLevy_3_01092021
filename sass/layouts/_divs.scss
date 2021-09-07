@@ -261,13 +261,7 @@
                         width: 4rem;
                     }
         
-                    &:hover h4{
-                        @include hide_text;
-                    }
-        
-                    &:hover p{
-                         @include hide_text;
-                    }
+    
         
                     &:hover .food__header{
                         width: 60%;
