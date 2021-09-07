@@ -433,7 +433,7 @@ body {
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .menu__activities .food__header h4 {
     display: flex;
-    width: 65%;
+    width: 70%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -446,7 +446,7 @@ body {
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .menu__activities .food__header p {
     display: flex;
-    width: 65%;
+    width: 70%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -485,6 +485,23 @@ body {
   .menu__activities .food__check {
     width: 0;
   }
+  .menu__activities .food__check:hover .food__check {
+    visibility: visible;
+    width: 4rem;
+  }
+  .menu__activities .food__check:hover h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .menu__activities .food__check:hover p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .menu__activities .food__check:hover .food__header {
+    width: 60%;
+  }
 }
 .menu__activities .food__check i {
   border: 1px solid;
@@ -501,13 +518,11 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  visibility: visible;
 }
 .menu__activities .food:hover p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  visibility: visible;
 }
 .menu__activities .food:hover .food__header {
   width: 60%;
@@ -783,6 +798,11 @@ body {
 }
 .pied .contenu--pagex {
   margin-left: 3.6%;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .pied .contenu--pagex {
+    margin-left: 0.1%;
+  }
 }
 .pied__logo {
   font-family: "Shrikhand", "cursive";

@@ -123,6 +123,7 @@
         margin: 0 auto;
         
     }
+    
     &__activities{
         @include column;
         width: 32%;
@@ -168,10 +169,8 @@
                     margin: 2.5% 0 0 0;
                     @include mobile{
                         display: flex;
-                        width: 65%;
-                        white-space: nowrap;
-                        overflow:hidden;
-                        text-overflow: ellipsis;
+                        width: 70%;
+                        @include hide_text;
                         
                     }
                     
@@ -182,10 +181,8 @@
                     margin:0; 
                     @include mobile{
                         display: flex;
-                        width: 65%;
-                        white-space: nowrap;
-                        overflow:hidden;
-                        text-overflow: ellipsis;
+                        width: 70%;
+                        @include hide_text;
                     }
                 }
             }
@@ -218,6 +215,22 @@
                 background-color: #99e2d0;
                 @include mobile{
                     width: 0;
+                    &:hover .food__check{
+                        visibility: visible;
+                        width: 4rem;
+                    }
+        
+                    &:hover h4{
+                        @include hide_text;
+                    }
+        
+                    &:hover p{
+                         @include hide_text;
+                    }
+        
+                    &:hover .food__header{
+                        width: 60%;
+                    }
                 }
                 transition: all 500ms;
                 i{
@@ -234,17 +247,11 @@
             }
 
             &:hover h4{
-                white-space: nowrap;
-                overflow:hidden;
-                text-overflow: ellipsis;
-                visibility: visible;
+                @include hide_text;
             }
 
             &:hover p{
-                white-space: nowrap;
-                overflow:hidden;
-                text-overflow: ellipsis;
-                visibility: visible;
+                 @include hide_text;
             }
 
             &:hover .food__header{
