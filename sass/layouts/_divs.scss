@@ -163,8 +163,9 @@
                 flex-direction: column;
                 padding-left: 4%;
                 font-size: 1em;
+               // border:1px solid;
                 @include mobile{
-                    width: 60%;
+                    flex: 0.9;
                 }
                 //border: 1px solid;
                 h4{
@@ -172,7 +173,7 @@
                     margin: 2.5% 0 0 0;
                     @include mobile{
                         display: flex;
-                        width: 60%;
+                        width: 70%;
                         @include hide_text;
                         
                     }
@@ -184,7 +185,7 @@
                     margin:0; 
                     @include mobile{
                         display: flex;
-                        width: 60%;
+                        width: 70%;
                         @include hide_text;
                     }
                 }
@@ -196,10 +197,9 @@
                 padding-right: .5rem;
                 font-weight: bold;
                 font-size: 1em;
-                position: relative;
-                //border: 1px solid;
+                position:relative;
                 @include mobile{
-                   margin-left: -6rem;
+                   margin-left: -3rem;
                    padding-top: 10%;
                    padding-right: .5rem;
                 }
