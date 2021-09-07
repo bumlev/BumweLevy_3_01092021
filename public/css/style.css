@@ -192,6 +192,16 @@ body {
     width: 100%;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 100%;
+  }
+}
 
 .local {
   display: flex;
@@ -387,6 +397,14 @@ body {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
 .menu__activities {
   display: flex;
   flex-direction: column;
@@ -398,7 +416,13 @@ body {
     margin: 0 0;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .menu__activities {
+    width: 100%;
+    margin: 0 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .menu__activities {
     width: 100%;
     margin: 0 0;
@@ -458,11 +482,29 @@ body {
     text-overflow: ellipsis;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .menu__activities .food__header h4 {
+    display: flex;
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
 .menu__activities .food__header p {
   font-weight: 300;
   margin: 0;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .menu__activities .food__header p {
+    display: flex;
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
   .menu__activities .food__header p {
     display: flex;
     width: 70%;
@@ -485,6 +527,13 @@ body {
     margin-left: -3rem;
     padding-top: 10%;
     padding-right: 0.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .menu__activities .food__price {
+    margin-left: -3rem;
+    padding-top: 10%;
+    padding-right: 1rem;
   }
 }
 .menu__activities .food__check {
@@ -821,6 +870,11 @@ body {
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .pied .contenu--pagex {
     margin-left: 0.1%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .pied .contenu--pagex {
+    margin-left: 0.7%;
   }
 }
 .pied__logo {
