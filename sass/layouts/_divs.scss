@@ -120,13 +120,22 @@
     @include mobile{
         @include column;
         width: 95%;
-        margin: 0 auto;
-        
+        margin: 0 auto;   
+    }
+
+    @include mobile_android{
+        @include column;
+        width: 95%;
+        margin: 0 auto;   
     }
 
     &__activities{
         @include column;
         width: 32%;
+        @include mobile{
+            width: 100%;
+            margin: 0 0;
+        }
         @include mobile{
             width: 100%;
             margin: 0 0;
