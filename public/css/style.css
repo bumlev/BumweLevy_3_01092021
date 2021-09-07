@@ -109,7 +109,6 @@ body {
   display: block;
   margin-left: auto;
   cursor: pointer;
-  transition: transform 1s linear;
 }
 .tete .icon i.far.fa-heart {
   display: block;
@@ -134,8 +133,6 @@ body {
   top: -30px;
   visibility: hidden;
   opacity: 0;
-  transform: scale(1);
-  transition: transform 1s linear;
 }
 .tete .icon .icon_2--pagex {
   top: 0;
@@ -153,7 +150,6 @@ body {
   background: linear-gradient(to top, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transform: scale(1.5);
 }
 .tete .icon--pagex {
   display: flex;
@@ -533,7 +529,7 @@ body {
   .menu__activities .food__price {
     margin-left: -3rem;
     padding-top: 10%;
-    padding-right: 1rem;
+    padding-right: 2rem;
   }
 }
 .menu__activities .food__check {
@@ -762,7 +758,6 @@ body {
   display: block;
   margin-left: auto;
   cursor: pointer;
-  transition: transform 1s linear;
 }
 .restaurant__new .order__menu .footer__menu .like .icon i.far.fa-heart {
   display: block;
@@ -787,8 +782,6 @@ body {
   top: -30px;
   visibility: hidden;
   opacity: 0;
-  transform: scale(1);
-  transition: transform 1s linear;
 }
 .restaurant__new .order__menu .footer__menu .like .icon .icon_2--pagex {
   top: 0;
@@ -806,7 +799,6 @@ body {
   background: linear-gradient(to top, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transform: scale(1.5);
 }
 .restaurant__new .order__menu .footer__menu .like .icon--pagex {
   display: flex;

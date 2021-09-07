@@ -122,7 +122,6 @@
         display: block;
         margin-left: auto;
         cursor: pointer;
-        transition: transform 1s linear;
         i.far.fa-heart {
             display: block;
             &--pagex{
@@ -132,7 +131,6 @@
         .icon_1{
             visibility: visible;
             opacity: 1;
-            transition: transform 1s linear;
             &--pagex{
                 position: $relative;
                 top:0;
@@ -146,8 +144,6 @@
             top: -30px;
             visibility: hidden;
             opacity: 0;
-            transform: scale(1);
-            transition: transform 1s linear;
             &--pagex{
                 top:0;
                 text-align: center;
@@ -166,7 +162,6 @@
             background: linear-gradient(to top , $color-primary , $color-secondary);
             -webkit-background-clip:text;
             -webkit-text-fill-color: transparent;
-            transform: scale(1.5);
         }
         &--pagex{
             display: $flex;
