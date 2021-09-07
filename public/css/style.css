@@ -412,6 +412,13 @@ body {
   padding: 0.3rem 0;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  position: relative;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .menu__activities .food {
+    width: 97%;
+    margin: 0.5rem 1% 0.3rem 1%;
+  }
 }
 .menu__activities .food__header {
   display: flex;
@@ -423,16 +430,34 @@ body {
 .menu__activities .food__header h4 {
   margin: 2.5% 0 0 0;
 }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .menu__activities .food__header h4 {
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
 .menu__activities .food__header p {
   font-weight: 300;
   margin: 0;
 }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .menu__activities .food__header p {
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+  }
+}
 .menu__activities .food__price {
   display: flex;
-  padding-top: 7.5%;
-  padding-right: 4%;
+  top: 59.5%;
+  right: 4%;
   font-weight: bold;
   font-size: 1em;
+  position: absolute;
 }
 
 .submit {
