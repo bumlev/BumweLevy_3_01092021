@@ -165,7 +165,7 @@
                 font-size: 1em;
                // border:1px solid;
                 @include mobile{
-                    flex: 0.9;
+                    flex: 1;
                 }
                 //border: 1px solid;
                 h4{
@@ -209,7 +209,7 @@
                 display: flex;
                 width: 0;
                 visibility: hidden;
-                margin: -.6rem 0;
+                margin: -.6rem 0 ;
                 justify-content: center;
                 align-items: center;
                 position: relative;
