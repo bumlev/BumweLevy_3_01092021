@@ -409,7 +409,7 @@ body {
   border-radius: 10px;
   cursor: pointer;
   margin: 0.3rem;
-  padding: 0.3rem 0;
+  padding: 0.6rem 0;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   background-color: #fff;
   position: relative;
@@ -422,8 +422,8 @@ body {
 }
 .menu__activities .food__header {
   display: flex;
-  flex-direction: column;
   flex: 1;
+  flex-direction: column;
   padding-left: 4%;
   font-size: 1em;
 }
@@ -432,7 +432,8 @@ body {
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .menu__activities .food__header h4 {
-    width: 80%;
+    display: flex;
+    width: 65%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -444,20 +445,72 @@ body {
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .menu__activities .food__header p {
-    width: 80%;
+    display: flex;
+    width: 65%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    text-align: justify;
   }
 }
 .menu__activities .food__price {
   display: flex;
-  top: 59.5%;
-  right: 4%;
+  flex: 0;
+  padding-top: 7.5%;
+  padding-right: 0.5rem;
   font-weight: bold;
   font-size: 1em;
-  position: absolute;
+  position: relative;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .menu__activities .food__price {
+    margin-left: -6rem;
+    padding-top: 10%;
+    padding-right: 0.5rem;
+  }
+}
+.menu__activities .food__check {
+  display: flex;
+  width: 0;
+  visibility: hidden;
+  margin: -0.6rem 0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #99e2d0;
+  transition: all 500ms;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .menu__activities .food__check {
+    width: 0;
+  }
+}
+.menu__activities .food__check i {
+  border: 1px solid;
+  border-radius: 20px;
+  color: #99e2d0;
+  padding: 0.2rem;
+  background-color: #fff;
+}
+.menu__activities .food:hover .food__check {
+  visibility: visible;
+  width: 4rem;
+}
+.menu__activities .food:hover h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  visibility: visible;
+}
+.menu__activities .food:hover p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  visibility: visible;
+}
+.menu__activities .food:hover .food__header {
+  width: 60%;
 }
 
 .submit {
