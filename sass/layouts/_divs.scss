@@ -144,6 +144,7 @@
     &__activities{
         @include column;
         width: 32%;
+        overflow: hidden;
         @include mobile{
             width: 100%;
             margin: 0 0;
@@ -173,11 +174,16 @@
             @include row;
             width: $auto;
             border-radius: 10px;
+            overflow: hidden;
             cursor: pointer;
             margin:.3rem;
             padding: .6rem 0;
             box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
             background-color: #fff;
+            animation: itemAppear .6s;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+            animation-fill-mode: both;
+            transform: scale(0);
             @include mobile{
                 width: 97%;
                 margin: .5rem 1% .3rem 1.5% ;
@@ -263,6 +269,7 @@
                  @include hide_text;
             }
         }
+        @include delay(0);
     }
 
 }
