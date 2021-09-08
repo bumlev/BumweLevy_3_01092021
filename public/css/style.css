@@ -39,32 +39,28 @@
 }*/
 body {
   font-family: "Roboto", sans-serif;
-  margin: auto;
+  margin: 0;
   max-width: 1350px;
   counter-reset: compteListe;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   body {
     width: 100%;
-    height: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   body {
     width: 100%;
-    height: auto;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 767px) {
   body {
     width: 100%;
-    height: auto;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   body {
     width: 100%;
-    height: auto;
   }
 }
 
@@ -78,7 +74,6 @@ body {
 .header--pagex {
   display: flex;
   flex-direction: row;
-  position: relative;
   align-items: center;
 }
 .header__logo {
@@ -172,7 +167,7 @@ body {
   margin: 0 0 0 0;
 }
 .container--pagex {
-  width: 1215px;
+  width: 90%;
   background-color: #f3f3f3;
   height: auto;
   margin: -4% auto 0 auto;

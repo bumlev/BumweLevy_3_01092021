@@ -11,27 +11,23 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    margin: auto;
+    margin: 0;
     max-width: 1350px;
     counter-reset: compteListe;
    
     @include mobile{
         width: 100%;
-        height: auto;
     }
 
     @include tablette{
         width: 100%;
-        height: auto;
     }
     @include mobile_android{
         width: 100%;
-        height: auto;
     }
 
     @include tablette_pro{
         width: 100%;
-        height: auto;
     }
 }
 // Header:Entete de la page
