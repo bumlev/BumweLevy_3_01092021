@@ -462,12 +462,21 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .menu__activities .food__header {
+    padding-left: 2%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .menu__activities .food__header {
+    padding-left: 2%;
+  }
+}
 .menu__activities .food__header h4 {
   margin: 0.5rem 0 0 0;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .menu__activities .food__header h4 {
-    max-width: 70%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -475,7 +484,6 @@ body {
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .menu__activities .food__header h4 {
-    max-width: 70%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -502,7 +510,7 @@ body {
 .menu__activities .food__price {
   display: flex;
   flex: 0.1;
-  padding-top: 1.9rem;
+  padding-top: 1.8rem;
   padding-right: 0.5rem;
   font-weight: bold;
   font-size: 1em;
