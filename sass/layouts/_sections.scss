@@ -2,7 +2,6 @@
 
 /* ------------------------  Section de la page d'accueil  ------------------------------------*/
 
-
 .restaurant{
     @include auto_column;
     justify-content: space-around;
@@ -11,10 +10,13 @@
     &__title{
         display: $flex;
         margin:1% 5% 1% 5%;
-        padding-left:2.4%;
+        padding-left:2.5%;
         @include mobile{
-            margin:1% 0 1% 0;
-            padding-left:3%;
+            padding-left:0;
+        }
+        @include mobile_android{
+            margin:1% 7.4% 1% 7.4%;
+            padding-left: 0;
         }
         @include tablette_pro{
             padding-left:0;
@@ -25,7 +27,7 @@
         justify-content: space-between;
         width: $auto;
         height: 265px;
-        margin: 1% 8.1% 3% 7.6%;
+        margin: 1% 7.5% 3% 7.6%;
         @include tablette_pro{
             margin:1% 5% 1% 5%;
         }
