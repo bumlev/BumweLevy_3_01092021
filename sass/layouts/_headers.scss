@@ -9,6 +9,7 @@
     /// Pour d'autres pages 
     &--pagex{
        @include row;
+        position: relative;
         align-items: center;
     }
     &__logo{
