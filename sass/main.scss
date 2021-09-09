@@ -12,12 +12,18 @@
 // Loaders
 @import "./components/loaders";
 
+html{
+    scroll-behavior: smooth;
+}
+
 //body: Corps de la page
+
 
 body{
     font-family: 'Roboto', sans-serif;
     margin: auto;
     max-width: 1400px;
+    scroll-behavior: auto;
     counter-reset: compteListe;
    
     @include mobile{

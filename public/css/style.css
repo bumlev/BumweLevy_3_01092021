@@ -104,10 +104,15 @@
   animation-delay: 0.5s;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
   max-width: 1400px;
+  scroll-behavior: auto;
   counter-reset: compteListe;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
