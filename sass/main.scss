@@ -17,8 +17,6 @@ html{
 }
 
 //body: Corps de la page
-
-
 body{
     font-family: 'Roboto', sans-serif;
     margin: auto;
@@ -45,6 +43,7 @@ body{
         height: auto;
     }
 }
+
 // Header:Entete de la page
 @import "./layouts/headers";
 
