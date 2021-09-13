@@ -250,6 +250,10 @@
                     padding: .2rem;
                     background-color: #fff;
                     overflow: hidden;
+                    transform: rotatex(0deg);
+                    transform: rotatey(0deg);
+                    transform:rotateZ(0deg);
+                    transition: transform 0.5s;
                 }
             }
             &:hover .food__check{
@@ -267,6 +271,11 @@
 
             &:hover p{
                  @include hide_text;
+            }
+            &:hover i{
+                    transform: rotatex(360deg);
+                    transform: rotatey(360deg);
+                    transform:rotateZ(360deg);
             }
         }
         @include delay(0);
