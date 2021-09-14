@@ -637,7 +637,6 @@ body {
   background-color: #fff;
   overflow: hidden;
   animation-name: out;
-  animation-duration: infinite;
 }
 .menu__activities .food:hover .food__check {
   visibility: visible;
