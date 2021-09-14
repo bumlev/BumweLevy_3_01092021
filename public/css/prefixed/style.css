@@ -872,9 +872,9 @@ body {
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   background-color: #99e2d0;
-  -webkit-transition: all 600ms;
-  -o-transition: all 600ms;
-  transition: all 600ms;
+  -webkit-transition: all 700ms;
+  -o-transition: all 700ms;
+  transition: all 700ms;
 }
 .menu__activities .food__check i {
   display: block;
