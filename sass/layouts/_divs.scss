@@ -180,7 +180,7 @@
             padding: .6rem 0;
             box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
             background-color: #fff;
-            animation: itemAppear .6s;
+            animation: itemAppear 3s;
             animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
             animation-fill-mode: both;
             transform: scale(0);
