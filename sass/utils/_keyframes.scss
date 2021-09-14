@@ -29,3 +29,21 @@
     }
     
   }
+
+  @keyframes in {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes out {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

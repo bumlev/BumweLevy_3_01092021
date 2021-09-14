@@ -243,17 +243,17 @@
                 border-bottom-right-radius: 10px;
                 border-top-right-radius: 10px;
                 background-color: #99e2d0;
-                transition: all 500ms;
+                transition: all 600ms;
                 i{
+                    display:block;
                     border-radius: 20px;
                     color: #99e2d0;
                     padding: .2rem;
                     background-color: #fff;
                     overflow: hidden;
-                    transform: rotatex(0deg);
-                    transform: rotatey(0deg);
-                    transform:rotateZ(0deg);
-                    transition: transform 0.5s;
+                    animation-name: out;
+                    animation-duration: infinite;
+
                 }
             }
             &:hover .food__check{
@@ -273,9 +273,9 @@
                  @include hide_text;
             }
             &:hover i{
-                    transform: rotatex(360deg);
-                    transform: rotatey(360deg);
-                    transform:rotateZ(360deg);
+               
+                   animation-name: in;
+                   animation-duration: .4s;
             }
         }
         @include delay(0);

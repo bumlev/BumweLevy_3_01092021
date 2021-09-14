@@ -65,6 +65,22 @@
     transform: translateY(0);
   }
 }
+@keyframes in {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes out {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .loader {
   position: fixed;
   height: 100%;
@@ -611,18 +627,17 @@ body {
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   background-color: #99e2d0;
-  transition: all 500ms;
+  transition: all 600ms;
 }
 .menu__activities .food__check i {
+  display: block;
   border-radius: 20px;
   color: #99e2d0;
   padding: 0.2rem;
   background-color: #fff;
   overflow: hidden;
-  transform: rotatex(0deg);
-  transform: rotatey(0deg);
-  transform: rotateZ(0deg);
-  transition: transform 0.5s;
+  animation-name: out;
+  animation-duration: infinite;
 }
 .menu__activities .food:hover .food__check {
   visibility: visible;
@@ -642,9 +657,8 @@ body {
   text-overflow: ellipsis;
 }
 .menu__activities .food:hover i {
-  transform: rotatex(360deg);
-  transform: rotatey(360deg);
-  transform: rotateZ(360deg);
+  animation-name: in;
+  animation-duration: 0.4s;
 }
 .menu__activities .delay-0 {
   animation-delay: 0s;
