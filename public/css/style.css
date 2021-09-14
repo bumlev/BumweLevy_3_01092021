@@ -849,6 +849,7 @@ body {
   margin: 0;
 }
 .restaurant__new .order__menu .footer__menu .description span {
+  font-weight: 300;
   margin: 0;
 }
 .restaurant__new .order__menu .footer__menu .like {
